@@ -10,9 +10,9 @@ The only rules of the game are:
 This year I had to make a present for Luca, one of my closest friends who happens to be really into cars.
 
 ## 💡 The idea
-Even if I know Luca really well, it's always hard to find a good gift for a person with a very restricted budget and without consulting with anyone (more on that later). I kept remebering in my head that he always wanted to make a lamp out of old objects that no longer can have their proper function, but it seemed an idea too hard to be made reality.
+Even if I know Luca really well, it's always hard to find a good gift for a person with a very restricted budget and without consulting with anyone. I kept remebering in my head that he always wanted to make a lamp out of old objects that no longer can have their proper function, but it seemed an idea too hard to be made reality.
 
-That changed the moment my father, out of nowhere, told me he had to go (for work reasons) to a local company that rectifies cilinders of dead/damaged engines to bring them back to life. He also told me that they most likely had a pile of old and damaged pistons that no longer had a use.
+That changed the moment my father, out of nowhere, told me he had to go (for work reasons) to a local company that rectifies cilinders of dead/damaged engines to bring them back to life. He also told me that they most likely had a pile of old and damaged pistons that no longer had a use. \
 I had an idea for the present: if they were kind enough to give me an old piston (for free) I could put an led ring inside and make a lamp out of it.
 
 ## 📑 To the project board
@@ -20,7 +20,7 @@ I had an idea for the present: if they were kind enough to give me an old piston
 > [!TIP] 
 > From now on I need to talk in a more technical language, specifically about the various part that are used around a piston inside the engine. I'll leave an image that explains easily what I am talking about [here](./assets/piston_schematic.jpg).
 
-Luckily, they were really kind and gave me a wrecked piston to make the lamp. So I quickly opened a sketching app on my iPad and drawn the ideas I had.
+Luckily, they were really kind and gave me a wrecked piston to make the lamp. So I quickly opened a sketching app on my iPad and drawn the ideas I had. \
 One thing was sure, I wanted the light ring to be placed inside the piston, with the light shining in the direction where the connecting rod should be. 
 
 ![Image of the sketches I made](./assets/Lampada_Luca_v1.jpg)
@@ -31,7 +31,7 @@ There are 3 different designs in the image above: the first one is explained in 
 The first idea was the one that conviced me the most. It was supposed to have a round base where all the electronics required should have lived, while the piston was rised from the base by two custom made connecting rods placed like a sort of reversed V shape.
 
 ### 🔢 Ideas #2 and #3
-The second idea was the worst one, in my opinion. To rise the piston, instead of the connecting rods, I thought about some engine valves I had laying around in my home.
+The second idea was the worst one, in my opinion. To rise the piston, instead of the connecting rods, I thought about some engine valves I had laying around in my home. \
 Yes, I know, "who has valves laying around in their house?". I'm building a lamp out of a piston, you should not be surprised about some valves.
 
 <a name="third-design"></a>
@@ -103,7 +103,7 @@ It also worked really great with Luca's phone using the WLED app for Android, wi
 
 Now, let's talk a little about replicability of the project. If you manage to find the exact same piston[^1], I'll leave the .STL files [here](https://www.printables.com/model/1530696-pistonlamp) for you to print with your 3D printer.
 
-
+If you don't have the same exact piston, you can try to measure the STL files from above using your slicer of choice, to see if the piston you found is compatible with this project.
 
 If your piston is not compatible, good luck and have a nice CAD session!
 
