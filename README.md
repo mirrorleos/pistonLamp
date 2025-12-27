@@ -1,5 +1,5 @@
 # PistonLamp
-The complete project of a lamp based on a piston from an engine car.
+The complete project history of a lamp based on a piston from a car engine.
 
 ## Context
 Every year, during the Christmas period, with a group of friends from the place where I live we organize a Secret Santa. For those who have never heard of a Secret Santa, you basically extract a random name in the group and you have to come up with a present. The "secret" part is the fact that you don't know who is the pearson that is going to give you a gift until the moment he or she gives it to you.
@@ -33,6 +33,7 @@ The first idea was the one that conviced me the most. It was supposed to have a 
 The second idea was the worst one, in my opinion. To rise the piston, instead of the connecting rods, I thought about some engine valves I had laying around in my home.
 Yes, I know, "who has valves laying around in their house?". I'm building a lamp out of a piston, you should not be surprised about some valves.
 
+<a name="third-design"></a>
 Anyway, the last design I came up with was ok, but not as good as the first one. This time, the piston was placed head down on the table, with a plastic thing to diffuse light on the top. In this case, the wrist pin of the piston played a crucial role, because it was the house for the electronics, with one side closed and the other one with the hole for the USB-C connector.
 
 ## Approach with reality
@@ -40,7 +41,7 @@ After a more detailed inspection of the piston and to which electronics I had av
 
 While I have a small CNC machine I can use to make the connecting rods (out of wood), the size of the led ring I found was too little "hug" the connecting rods. Also, the weight of the piston raised some concerns to me, as I didn't know whether the wood I had available was able to handle it or not.
 
-The third, suddenly, had a lot more appeal than before.
+The [third design](#third-design), suddenly, had a lot more appeal than before.
 It was still not enough though, I had to make it better: with the piston head facing the table, in my opinion, it was not so clear what that metal cilindrical thing was.
 
 What about rotating it? Eureka!
@@ -56,7 +57,7 @@ As I said in the explanation of the third design, the only space I have in this 
 Luckily, Aliexpress came in help and shipped me a small ESP32-C3 based microcontroller for ~3€.
 
 Now I "just" needed to figure out the software part. I could probably code a web server on the ESP-32 to process the request for the light over Luca's house LAN but that required a lot of time that, with the university exams at the door, I really didn't have.
-After thinking about this for a little longer, the WLED project came to my mind, and it was simply perfect. I mean, just read the first line of their website:
+After thinking about this for a little longer, the [WLED project](https://kno.wled.ge) came to my mind, and it was simply perfect. I mean, just read the first line of their website:
 
 > A fast and feature-rich implementation of an ESP32/ESP8266 webserver to control NeoPixel (WS2812B, WS2811, SK6812) LEDs or also SPI based chipsets like the WS2801 and APA102!
 
@@ -67,8 +68,43 @@ I quickly flashed the ESP with their web flasher and a few clicks of config late
 ## The marriage with the piston
 For design purposes (again) I didn't want to have screws or glue in sight, and I wanted the device to be serviceable in the future.
 
-I came up with the idea of dividing the wrist pin in two halves, one that is simply a cork and the other one that will contain the ESP32. The LED ring will be the piece that joins the two halves so that they are not able to escape the holes in the piston intended for the wrist pin.
+I came up with the idea of dividing the wrist pin in two halves, one that is simply a cork and the other one that will contain the ESP32. The LED ring will be the piece that joins the two halves so that they are not able to escape the holes in the piston intended for the wrist pin (as shown in the [image below](#image-below)).
 
 So I opened AutoCAD, and quickly (first try) created the perfect 3D model to print. Yea... 
 ![Image of the "first try"](./assets/IMG_5525.jpeg)
 "first try".
+
+Once I had the piston (cleaned from all the oil and stuff), the electronics and the prints I needed putting all together was really simple:
+1. Solder the three wires needed to the ESP-32 (I suggest long cables) (a red one to the 5V, a black one to the GND and a yellow one for the signal)
+2. Apply double side tape on the bottom of the ESP and stick it to the supporting part of his half of the wrist pin, paying attention to the USB-C port being correctly placed in the hole
+3. Put said half in one of the holes of the piston, with the flatened part (see the [model files](https://www.printables.com/model/1530696-pistonlamp)) pointing to the opposite direction from the head of the piston (it's where the LED ring will stick!)
+4. Now you can solder the RED wire to the VCC pin on the ring, the BLACK one to the GND and the YELLOW one to the signal (the cables should be routed something like [this](#image-ring))
+5. Put the remaining half of the wrist pin in the remaining home in the piston (with the flatened part as said before)
+6. Put some double sided tape on the ring in the spots that will sit on the flatened part of the wrist pin and stick the ring to it!
+
+
+## The finished result
+I'll leave some pictures to let you enjoy (I hope) the finished lamp!
+
+![First image](./assets/IMG_5520.jpeg)
+
+![A different prospective](./assets/IMG_5522.jpeg)
+
+![USB-C close-up](./assets/IMG_5523.jpeg)
+
+<a name="image-ring"></a>
+![Image of the ring](./assets/IMG_5524.jpeg)
+
+## Final considerations
+I managed to finish the project in time for the gift exchange, and Luca really liked it! \
+It also worked really great with Luca's phone using the WLED app for Android, without needing any additional configuration (other than his Wi-Fi password).
+
+Now, let's talk a little about replicability of the project. If you manage to find the exact same piston[^1], I'll leave the .STL files [here](https://www.printables.com/model/1530696-pistonlamp) for you to print with your 3D printer.
+
+
+
+If your piston is not compatible, good luck and have a nice CAD session!
+
+
+[^1]: On the head of the piston, there are some things written. Searching online fot those things I couldn't find anything, so it's probably an OEM piston of some sort. I'll leave the things written on the head here, if you are luckier than me: 94.313, Sp0.087, STD, 24D18.
+
