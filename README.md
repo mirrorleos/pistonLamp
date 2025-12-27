@@ -17,7 +17,8 @@ I had an idea for the present: if they were kind enough to give me an old piston
 
 ## To the project board
 
-> [!TIP] From now on I need to talk in a more technical language, specifically about the various part that are used around a piston inside the engine. I'll leave an image that explains easily what I am talking about here.
+> [!TIP] 
+> From now on I need to talk in a more technical language, specifically about the various part that are used around a piston inside the engine. I'll leave an image that explains easily what I am talking about [here](./assets/piston_schematic.jpg).
 
 Luckily, they were really kind and gave me a wrecked piston to make the lamp. So I quickly opened a sketching app on my iPad and drawn the ideas I had.
 One thing was sure, I wanted the light ring to be placed inside the piston, with the light shining in the direction where the connecting rod should be. 
@@ -51,7 +52,8 @@ Now that I had a final design, I was ready to finalyze the hardware and the soft
 
 Starting from the lights (which I obviously wanted RGB), I chose a WS2812B ring (12 leds) that was a leftover from another project.
 
-> [!NOTE] A WS2812B is an addressable RGB LED that has its own tiny driver chip built in, so each LED can be controlled individually with a single data line. They’re commonly used in LED strips and matrices for colorful animations, effects, and displays.
+> [!NOTE] 
+> A WS2812B is an addressable RGB LED that has its own tiny driver chip built in, so each LED can be controlled individually with a single data line. They’re commonly used in LED strips and matrices for colorful animations, effects, and displays.
 
 As I said in the explanation of the third design, the only space I have in this design to house the electronics is in the wrist pin, so I need everything to be small. As if it wasn't already enough troubles, I didn't want to have a switch on the device, as it would ruin the idea of the piston. So I had to come up with something that not only was capable of driving the twelve LEDs, but it was also small and able to connect to the internet to (somehow, I didn't have an idea still) control everything.
 Luckily, Aliexpress came in help and shipped me a small ESP32-C3 based microcontroller for ~3€.
