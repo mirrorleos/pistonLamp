@@ -2,26 +2,26 @@
 The complete project history of a lamp based on a piston from a car engine.
 
 ## 🎁 Context
-Every year, during the Christmas period, with a group of friends from the place where I live we organize a Secret Santa. For those who have never heard of a Secret Santa, you basically extract a random name in the group and you have to come up with a present. The "secret" part is the fact that you don't know who is the pearson that is going to give you a gift until the moment he or she gives it to you.
+Every year, during the Christmas period, with a group of friends from the place where I live, we organize a Secret Santa. For those who have never heard of it, you basically extract randomly someone in the group and you have to come up with a present for them. The "secret" part is the fact that you don't know who is the pearson that is going to give you a gift until the moment he or she gives it to you.
 The only rules of the game are:
-1. Your present must stay in a pre-defined budget (in this case was 5€)
+1. Your present must stay in a pre-defined budget (in this case it was 5€)
 2. You must not tell anyone whose name you have drawn (nor try to understand whoever has dranwn your name)
 
 This year I had to make a present for Luca, one of my closest friends who happens to be really into cars.
 
 ## 💡 The idea
-Even if I know Luca really well, it's always hard to find a good gift for a person with a very restricted budget and without consulting with anyone. I kept remebering in my head that he always wanted to make a lamp out of old objects that no longer can have their proper function, but it seemed an idea too hard to be made reality.
+Even if I know Luca really well, it's always hard to find a good gift for a person with a very restricted budget and without consulting with anyone. I kept remebering in my head that he always wanted to make a lamp out of old objects that no longer has their proper function, but it seemed too difficult of an idea to actually be realized.
 
 That changed the moment my father, out of nowhere, told me he had to go (for work reasons) to a local company that rectifies cilinders of dead/damaged engines to bring them back to life. He also told me that they most likely had a pile of old and damaged pistons that no longer had a use. \
-I had an idea for the present: if they were kind enough to give me an old piston (for free) I could put an led ring inside and make a lamp out of it.
+I had an idea for the present: if they were kind enough to give me an old piston (for free) I could put an led ring inside of it and make a lamp out of it.
 
 ## 📑 To the project board
 
 > [!TIP] 
-> From now on I need to talk in a more technical language, specifically about the various part that are used around a piston inside the engine. I'll leave an image that explains easily what I am talking about [here](./assets/piston_schematic.jpg).
+> From now on, I need to talk in a more technical language, specifically about the various part that are used around a piston inside the engine. I'll leave an image that explains clearly what I am talking about [here](./assets/piston_schematic.jpg).
 
-Luckily, they were really kind and gave me a wrecked piston to make the lamp. So I quickly opened a sketching app on my iPad and drawn the ideas I had. \
-One thing was sure, I wanted the light ring to be placed inside the piston, with the light shining in the direction where the connecting rod should be. 
+Luckily, they were really kind and gave me a wrecked piston to make the lamp. So I quickly opened a sketching app on my iPad and drawn some ideas I had. \
+One thing was sure, I wanted the light ring to be placed inside of the piston, with the light shining in the direction where the connecting rod would be. 
 
 ![Image of the sketches I made](./assets/Lampada_Luca_v1.jpg)
 
